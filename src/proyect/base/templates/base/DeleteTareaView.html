@@ -1,0 +1,16 @@
+{% extends 'base/principal.html' %}
+{% block content %}
+
+    <div class="barra-superior">
+        <a href="{% url 'pendientes' %}" style="color: azure; text-decoration: none">&#x1F81C; Volver</a>
+    </div>
+
+    <div class="cuerpo-tarjeta">
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Vas a eliminar esta Tarea: {{ tarea }}</p>
+            <input class="boton" type="submit" value="Eliminar">
+        </form>
+    </div>
+
+{% endblock content %}

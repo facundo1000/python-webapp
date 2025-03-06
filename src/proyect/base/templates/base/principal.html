@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anotador...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <style>
+        body {
+            background-color: #dfbb7f;
+            font-family: roboto;
+            padding-top: 60px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: #e3cfae;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a, p {
+            color: #7a5c2c;
+        }
+
+        .barra-superior {
+            display: flex;
+            justify-content: center;
+            color: antiquewhite;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+            background: linear-gradient(90deg, #7a5c2c 0%, #ca9338 100%);
+        }
+
+        .barra-superior button {
+            background: #332918;
+            color: antiquewhite;
+            border-radius: 5px 5px 5px 5px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .envoltorio-tarea {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            backgorund-color: antiquewhite;
+            border-top: 1px solid rgb(0, 0, 0);
+        }
+
+        .titulo-tarea {
+            display: flex;
+        }
+
+        .titulo-tarea a {
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+
+        .icono-tarea-completa {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(29, 210, 54);
+            border-radius: 50%;
+        }
+
+        .icono-tarea-incompleta {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(210, 29, 57);
+            border-radius: 50%;
+        }
+
+        .enlace-eliminar {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        #envoltorio-agregar-buscar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #enlace-agregar {
+            color: #7a5c2c;
+            text-decoration: none;
+            font-size: 32px;
+            text-shadow: 1px 1px #7f6f2d;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding: 10px !important;
+            display: block;
+        }
+
+        .boton {
+            margin-left: 10px;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #FAFAFA;
+            color: black;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cuerpo-tarjeta {
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+</body>
+</html>

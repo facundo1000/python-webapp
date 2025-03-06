@@ -1,0 +1,21 @@
+{% extends 'base/principal.html' %}
+
+{% block content %}
+
+    <div class="barra-superior">
+        <a href="{% url 'pendientes' %}" style="color: azure; text-decoration: none">&#x1F81C; Volver</a>
+    </div>
+
+    <div class="cuerpo-tarjeta">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <!--    {{ form.as_table }} vista con formato tabla, todos los elementos alineados horizontalmente-->
+            <!--    {{ form.as_ul }} vista con formato de lista-->
+
+            <input class="boton" type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+{% endblock content %}
